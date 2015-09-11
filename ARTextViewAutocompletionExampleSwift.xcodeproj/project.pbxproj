@@ -13,6 +13,10 @@
 		C2B3C4031BA2671B002344AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B3C4021BA2671B002344AE /* Images.xcassets */; };
 		C2B3C4061BA2671B002344AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B3C4041BA2671B002344AE /* LaunchScreen.xib */; };
 		C2B3C4121BA2671B002344AE /* ARTextViewAutocompletionExampleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C4111BA2671B002344AE /* ARTextViewAutocompletionExampleSwiftTests.swift */; };
+		C2B3C4221BA26730002344AE /* ARAutocompleteTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C41D1BA26730002344AE /* ARAutocompleteTextView.m */; };
+		C2B3C4231BA26730002344AE /* AREmailAutocompleteTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C41F1BA26730002344AE /* AREmailAutocompleteTextView.m */; };
+		C2B3C4241BA26730002344AE /* ARTwitterAutocompleteTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C4211BA26730002344AE /* ARTwitterAutocompleteTextView.m */; };
+		C2B3C42D1BA26843002344AE /* ARAutocompleteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B3C42C1BA26843002344AE /* ARAutocompleteManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,15 @@
 		C2B3C40B1BA2671B002344AE /* ARTextViewAutocompletionExampleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARTextViewAutocompletionExampleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B3C4101BA2671B002344AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2B3C4111BA2671B002344AE /* ARTextViewAutocompletionExampleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTextViewAutocompletionExampleSwiftTests.swift; sourceTree = "<group>"; };
+		C2B3C41C1BA26730002344AE /* ARAutocompleteTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAutocompleteTextView.h; sourceTree = "<group>"; };
+		C2B3C41D1BA26730002344AE /* ARAutocompleteTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARAutocompleteTextView.m; sourceTree = "<group>"; };
+		C2B3C41E1BA26730002344AE /* AREmailAutocompleteTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AREmailAutocompleteTextView.h; sourceTree = "<group>"; };
+		C2B3C41F1BA26730002344AE /* AREmailAutocompleteTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AREmailAutocompleteTextView.m; sourceTree = "<group>"; };
+		C2B3C4201BA26730002344AE /* ARTwitterAutocompleteTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTwitterAutocompleteTextView.h; sourceTree = "<group>"; };
+		C2B3C4211BA26730002344AE /* ARTwitterAutocompleteTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTwitterAutocompleteTextView.m; sourceTree = "<group>"; };
+		C2B3C4281BA267AD002344AE /* ARTextViewAutocompletionExampleSwift-bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARTextViewAutocompletionExampleSwift-bridging-header.h"; sourceTree = "<group>"; };
+		C2B3C42B1BA26843002344AE /* ARAutocompleteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAutocompleteManager.h; sourceTree = "<group>"; };
+		C2B3C42C1BA26843002344AE /* ARAutocompleteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARAutocompleteManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +72,8 @@
 		C2B3C3ED1BA2671B002344AE = {
 			isa = PBXGroup;
 			children = (
+				C2B3C4281BA267AD002344AE /* ARTextViewAutocompletionExampleSwift-bridging-header.h */,
+				C2B3C41B1BA26730002344AE /* Classes */,
 				C2B3C3F81BA2671B002344AE /* ARTextViewAutocompletionExampleSwift */,
 				C2B3C40E1BA2671B002344AE /* ARTextViewAutocompletionExampleSwiftTests */,
 				C2B3C3F71BA2671B002344AE /* Products */,
@@ -112,6 +127,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C2B3C41B1BA26730002344AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C2B3C41C1BA26730002344AE /* ARAutocompleteTextView.h */,
+				C2B3C41D1BA26730002344AE /* ARAutocompleteTextView.m */,
+				C2B3C41E1BA26730002344AE /* AREmailAutocompleteTextView.h */,
+				C2B3C41F1BA26730002344AE /* AREmailAutocompleteTextView.m */,
+				C2B3C4201BA26730002344AE /* ARTwitterAutocompleteTextView.h */,
+				C2B3C4211BA26730002344AE /* ARTwitterAutocompleteTextView.m */,
+				C2B3C42B1BA26843002344AE /* ARAutocompleteManager.h */,
+				C2B3C42C1BA26843002344AE /* ARAutocompleteManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +186,7 @@
 		C2B3C3EE1BA2671B002344AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Lucas Farah";
 				TargetAttributes = {
@@ -213,6 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2B3C3FE1BA2671B002344AE /* ViewController.swift in Sources */,
+				C2B3C4231BA26730002344AE /* AREmailAutocompleteTextView.m in Sources */,
+				C2B3C42D1BA26843002344AE /* ARAutocompleteManager.m in Sources */,
+				C2B3C4221BA26730002344AE /* ARAutocompleteTextView.m in Sources */,
+				C2B3C4241BA26730002344AE /* ARTwitterAutocompleteTextView.m in Sources */,
 				C2B3C3FC1BA2671B002344AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +378,7 @@
 				INFOPLIST_FILE = ARTextViewAutocompletionExampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARTextViewAutocompletionExampleSwift-bridging-header.h";
 			};
 			name = Debug;
 		};
@@ -353,6 +389,7 @@
 				INFOPLIST_FILE = ARTextViewAutocompletionExampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARTextViewAutocompletionExampleSwift-bridging-header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +446,7 @@
 				C2B3C4171BA2671B002344AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2B3C4181BA2671B002344AE /* Build configuration list for PBXNativeTarget "ARTextViewAutocompletionExampleSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +455,7 @@
 				C2B3C41A1BA2671B002344AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

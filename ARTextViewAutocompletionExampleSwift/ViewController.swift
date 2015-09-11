@@ -8,18 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController,UITextViewDelegate {
 
+  @IBOutlet weak var emailTextView: AREmailAutocompleteTextView!
+  @IBOutlet weak var allTextView: ARTwitterAutocompleteTextView!
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    // Set a default data source for all ARAutocompleteTextView instances. Otherwise, you can specify the data source on individual text fields via the autocompleteDataSource property or use my default AREmailAutocompleteTextView and ARTwitterAutocompleteTextView like in this sample
+    ARAutocompleteTextView.setDefaultAutocompleteDataSource(ARAutocompleteManager.sharedManager())
+    
+    // Dismiss the keyboard when the user taps outside of a text field
+    let singleTap = UITapGestureRecognizer(target: self, action: "handleSingleTap")
+    self.view.addGestureRecognizer(singleTap)
+
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  
+  func handleSingleTap()
+  {
+    self.emailTextView.resignFirstResponder()
+      self.allTextView.resignFirstResponder()
   }
-
-
 }
 
